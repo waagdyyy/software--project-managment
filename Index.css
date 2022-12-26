@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body{
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.forma{
+    width: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    color: rgb(0, 0, 0);
+    border: 15px burlywood solid;
+    padding: 20px;
+    padding-bottom: 100;
+    background-color: burlywood;
+    border-radius: 5px;
+    box-shadow: -10px 10px 5px wheat, 
+    -10px 10px 5px beige,
+    inset -10px 10px 5px wheat,
+    inset -10px 10px 5px beige;
+}
+.forma h1{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 40px 0;
+    font-family: 'Bebas Neue', cursive;
+}
+.forma p{
+    font-size: 20px;
+    margin: 15px 0;
+}
+.forma input{
+    font-size: 16px;
+    width: 100%;
+    padding: 15px 10px;
+    border: 0;
+    border-radius: 5px;
+    outline: 0;
+}
+.forma button{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px 0;
+    width: 50%;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 0;
+    margin-top: 522px;
+    background-color: bisque;
+}
+#button{
+    background-color:wheat;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom:10px ;
+}
+#button:hover{
+    background-color:darkkhaki;
+    cursor: none;
+}
+img{
+    float: right;
+    size: 20%;
+    padding: 10px;
+}
+.hzh h1{
+    color:wheat;
+    padding: 10px;
+    margin: 20px;
+    font-size: 7vw;
+    -webkit-text-stroke: 0.1vw black;
+    text-transform: uppercase;
+    float: left;
+    font-family: 'Bebas Neue', cursive;
+    position: relative;
+}
+.hzh h1::before{
+    content: attr(data-text);
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: darkkhaki;
+    -webkit-text-stroke: 0vw black;
+    border-right: 2px solid wheat;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+@keyframes animate {
+    0%{
+        width: 0;
+    }
+    70%{
+         width:100%
+    }
+}
+.hzh h1:hover{
+    color:darkkhaki;
+    cursor: none;
+}
+.hzh input{
+    float: right;
+    padding: 10px;
+    margin: 15px;
+    margin-top: 25px;
+}
+#button1:hover{
+    background-color:darkkhaki;
+    cursor: none;
+}
+#button1{
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: wheat;
+    border: 0;
+    background-color: wheat;
+    background:scroll;
+}
